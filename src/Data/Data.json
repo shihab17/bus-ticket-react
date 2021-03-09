@@ -1,0 +1,191 @@
+[{
+    "id": 1,
+    "sourceCity": "Tanjungkerta",
+    "destinationCity": "Kyprínos",
+    "departureTime": "8:28 AM",
+    "fare": "685",
+    "isAc": false,
+    "totalSeats": 40,
+    "bus": "Suzuki"
+  }, {
+    "id": 2,
+    "sourceCity": "Selebi-Phikwe",
+    "destinationCity": "Nanjiao",
+    "departureTime": "4:15 PM",
+    "fare": "931",
+    "isAc": true,
+    "totalSeats": 40,
+    "bus": "Mercury"
+  }, {
+    "id": 3,
+    "sourceCity": "Zuocun",
+    "destinationCity": "Enschede",
+    "departureTime": "9:24 PM",
+    "fare": "496",
+    "isAc": false,
+    "totalSeats": 40,
+    "bus": "Chevrolet"
+  }, {
+    "id": 4,
+    "sourceCity": "Mushie",
+    "destinationCity": "Simpang Ulim",
+    "departureTime": "6:36 PM",
+    "fare": "514",
+    "isAc": true,
+    "totalSeats": 40,
+    "bus": "Pontiac"
+  }, {
+    "id": 5,
+    "sourceCity": "Balma",
+    "destinationCity": "Vichy",
+    "departureTime": "11:05 AM",
+    "fare": "495",
+    "isAc": false,
+    "totalSeats": 40,
+    "bus": "Lamborghini"
+  }, {
+    "id": 6,
+    "sourceCity": "Tanjungkerta",
+    "destinationCity": "Margotuhu Kidul",
+    "departureTime": "8:42 AM",
+    "fare": "464",
+    "isAc": false,
+    "totalSeats": 40,
+    "bus": "Cadillac"
+  }, {
+    "id": 7,
+    "sourceCity": "Zhongshangang",
+    "destinationCity": "Kaišiadorys",
+    "departureTime": "11:25 PM",
+    "fare": "729",
+    "isAc": true,
+    "totalSeats": 40,
+    "bus": "Cadillac"
+  }, {
+    "id": 8,
+    "sourceCity": "Emiliano Zapata",
+    "destinationCity": "San Francisco de Macorís",
+    "departureTime": "5:25 AM",
+    "fare": "518",
+    "isAc": true,
+    "totalSeats": 40,
+    "bus": "Infiniti"
+  }, {
+    "id": 9,
+    "sourceCity": "Baolin",
+    "destinationCity": "Tabaquite",
+    "departureTime": "8:34 PM",
+    "fare": "724",
+    "isAc": false,
+    "totalSeats": 40,
+    "bus": "Pontiac"
+  }, {
+    "id": 10,
+    "sourceCity": "Digne-les-Bains",
+    "destinationCity": "Shishan",
+    "departureTime": "11:18 PM",
+    "fare": "966",
+    "isAc": true,
+    "totalSeats": 40,
+    "bus": "Acura"
+  }, {
+    "id": 11,
+    "sourceCity": "Campo Formoso",
+    "destinationCity": "Kasembon",
+    "departureTime": "10:18 AM",
+    "fare": "576",
+    "isAc": true,
+    "totalSeats": 40,
+    "bus": "Dodge"
+  }, {
+    "id": 12,
+    "sourceCity": "Fuxi",
+    "destinationCity": "Apuri",
+    "departureTime": "11:41 AM",
+    "fare": "894",
+    "isAc": false,
+    "totalSeats": 40,
+    "bus": "Ford"
+  }, {
+    "id": 13,
+    "sourceCity": "Khvalynsk",
+    "destinationCity": "Finote Selam",
+    "departureTime": "12:55 PM",
+    "fare": "569",
+    "isAc": true,
+    "totalSeats": 40,
+    "bus": "GMC"
+  }, {
+    "id": 14,
+    "sourceCity": "Bhairāhawā",
+    "destinationCity": "Saqqez",
+    "departureTime": "9:24 AM",
+    "fare": "426",
+    "isAc": true,
+    "totalSeats": 40,
+    "bus": "Ferrari"
+  }, {
+    "id": 15,
+    "sourceCity": "Chongru",
+    "destinationCity": "Huaiya",
+    "departureTime": "3:29 PM",
+    "fare": "711",
+    "isAc": false,
+    "totalSeats": 40,
+    "bus": "Ford"
+  }, {
+    "id": 16,
+    "sourceCity": "Vetlanda",
+    "destinationCity": "Biga",
+    "departureTime": "5:57 PM",
+    "fare": "992",
+    "isAc": true,
+    "totalSeats": 40,
+    "bus": "Hummer"
+  }, {
+    "id": 17,
+    "sourceCity": "Gândara de Aquém",
+    "destinationCity": "Azilal",
+    "departureTime": "6:47 PM",
+    "fare": "775",
+    "isAc": true,
+    "totalSeats": 40,
+    "bus": "Smart"
+  }, {
+    "id": 18,
+    "sourceCity": "Oslo",
+    "destinationCity": "Zhaoqing",
+    "departureTime": "11:43 AM",
+    "fare": "959",
+    "isAc": false,
+    "totalSeats": 40,
+    "bus": "Chevrolet"
+  }, {
+    "id": 19,
+    "sourceCity": "Llocllapampa",
+    "destinationCity": "Joaçaba",
+    "departureTime": "4:57 PM",
+    "fare": "874",
+    "isAc": false,
+    "totalSeats": 40,
+    "bus": "Porsche"
+  }, {
+    "id": 20,
+    "sourceCity": "Strachówka",
+    "destinationCity": "Alcaria da Serra",
+    "departureTime": "7:01 PM",
+    "fare": "646",
+    "isAc": true,
+    "totalSeats": 40,
+    "bus": "Mitsubishi"
+  },
+  {
+    "id": 21,
+    "sourceCity": "Tanjungkerta",
+    "destinationCity": "Kyprínos",
+    "departureTime": "8:28 AM",
+    "fare": "685",
+    "isAc": true,
+    "totalSeats": 40,
+    "bus": "Mitsubishi"
+  }]
