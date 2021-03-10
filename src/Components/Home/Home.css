@@ -1,0 +1,16 @@
+.home{
+    font-family: 'Roboto', sans-serif;
+    background:url("./images/bus.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 600px;
+}
+.findBus{
+    margin: 200px 150px 0 200px ;
+    padding: 70px;
+}
+link{
+    decoration:none;
+}

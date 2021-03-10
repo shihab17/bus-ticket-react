@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, Card, Table } from 'react-bootstrap';
+import { useHistory } from 'react-router';
 
 const Ticket = (props) => {
     const data = props.data;
@@ -12,6 +13,12 @@ const Ticket = (props) => {
     else {
         condition = "[Non-AC]"
     }
+    const history = useHistory();
+    const handleBook = (id) => {
+        console.log("Clicked",id)
+        const url = `booking/${id}`;
+        history.push(url);
+    }
     return (
         <div>
             <Card>
@@ -23,7 +30,7 @@ const Ticket = (props) => {
                         <p>Total Seats: {totalSeats} </p>
                         <p>DEPARTURE TIME: {departureTime} </p>
                     </Card.Text>
-                    <Button variant="info">Book now</Button>
+                    <Button variant="info" onClick={() => handleBook(id)}>Book now</Button>
                 </Card.Body>
             </Card>
         </div>

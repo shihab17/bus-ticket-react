@@ -10,6 +10,9 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Booking from './Components/Booking/Booking';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 function App() {
   const [fromLocation, setFromLocation] = useState([]);
   const [toLocation, setToLocation] = useState([]);
@@ -19,21 +22,27 @@ function App() {
   }
   const foundLoc = data.filter(fd => fd.sourceCity===fromLocation && fd.destinationCity===toLocation)
   return (
-    <div className="App">
+    <div className="App ">
       <Router>
-        <nav>
+        <nav className="nav bg-dark p-4 " >
           <ul>
-            <Link to="/home">Home </Link>
+            <Link className="text-decoration-none headerNav" to="/home">HOME </Link>
+            <Link className="text-decoration-none headerNav">ABOUT</Link>
+            <Link className="text-decoration-none headerNav">CONTACT</Link>
+            <Link className="text-decoration-none headerNav active">SIGN UP</Link>
             {/* <Link to="/getTicket">Get-Ticket </Link> */}
           </ul>
 
         </nav>
         <Switch>
           <Route path="/home">
-            <Home data={data} handleFind={handleFind}></Home>
+            <Home data={data}  handleFind={handleFind}></Home>
           </Route>
           <Route path="/getTicket">
             <GetTicket data={foundLoc}></GetTicket>
+          </Route>
+          <Route path="/booking/:id">
+                <Booking data={data}></Booking>
           </Route>
           <Route path="/">
             <Home data={data} handleFind={handleFind}></Home>

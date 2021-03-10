@@ -1,5 +1,12 @@
 .App {
   text-align: center;
+  font-family: 'Roboto', sans-serif;
+    background:url("./images/bus.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+    color:rgb(168, 168, 147);
 }
 
 .App-logo {
@@ -35,4 +42,13 @@
   to {
     transform: rotate(360deg);
   }
+}
+.headerNav{
+  font-size: 32px;
+  padding: 10px;
+}
+.headerNav:hover{
+  background-color: #52AF3A;
+  border-radius: 5px;
+  padding: 15px;
 }
