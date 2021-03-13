@@ -24,8 +24,8 @@ const Home = (props) => {
     const destinationCitys = data.filter(city => city.sourceCity === sourceCity);
 
     const dc = destinationCitys.map(dt => dt.destinationCity)
-    let uniqeData = [...new Set(sc)];
-    // console.log(uniqeData)
+    let uniqeData = [...new Set(dc)];
+    console.log(uniqeData)
     const destinationCityOption = [uniqeData.map(city => {
 
         return (
