@@ -21,10 +21,21 @@ const Seats = (props) => {
         // console.log(seatFind);
 
     }
-    // const subTotal = document.getElementById("subTotal").innerText;
-    // console.log(subTotal)
+    let serviceCharge = 0;
+    if (toatlSeat == 0) {
+        serviceCharge = 0;
+    }
+    else if (toatlSeat < 5) {
+        serviceCharge = 25;
+    }
+    else {
+        serviceCharge = 40;
+    }
+    const subTotal = fare * toatlSeat;
+    const tax = Math.round((subTotal) * 0.05)
+    const grandTotal = Math.round((tax) + serviceCharge + (subTotal));
 
-    // console.log(fare, totalSeats)
+    
     return (
         <div className="row bg-info">
             {/* Seat A */}
@@ -45,7 +56,7 @@ const Seats = (props) => {
 
 
                 </div>
-                <hr/>
+                <hr />
                 <div className="row">
                     <div className="col-1 ">
                         <Button variant="light" id="A1" onClick={() => handleSeat("A1")}>
@@ -389,29 +400,30 @@ const Seats = (props) => {
                     <div className="card-body">
                         <div className="row">
                             <div className="col-8">
-                                <h5 className="card-title"> Seats: </h5>
-                                <h5 className="card-title"> Fare: </h5>
-                                <hr/>
+
+                                <h5 className="card-title"> Available Seats ({totalSeats - toatlSeat} ) </h5>
+                                <h5 className="card-title"> Seats Booking ({toatlSeat}) </h5>
+                                <hr />
                                 <h5 className="card-title">Sub Total: </h5>
                                 <h5 className="card-title">Service Charge:</h5>
                                 <h5 className="card-title">Tax:</h5>
-                                <hr/>
+                                <hr />
                                 <h5 className="card-title">Grand Total:</h5>
                             </div>
                             <div className="text-right col-4">
-                                <h5 className="card-title"> {toatlSeat} </h5>
-                                <h5 className="card-title">&#2547; {fare} </h5>
-                                <hr/>
-                                <h5 className="card-title" id="subTotal"> &#2547; {fare * toatlSeat} </h5>
-                                <h5 className="card-title"> &#2547; 40 </h5>
-                                <h5 className="card-title" id="tax"> &#2547; { Math.round((fare * toatlSeat)* 0.05)  } </h5>
-                                <hr/>
-                                <h5 className="card-title" id="tax">&#2547; { Math.round((fare * toatlSeat)* 0.05) +40+ (fare * toatlSeat) } </h5>
+                                <h5 className="card-title"><br /> </h5>
+                                <h5 className="card-title"> <br /> </h5>
+                                <hr />
+                                <h5 className="card-title" id="subTotal"> &#2547; {subTotal} </h5>
+                                <h5 className="card-title"> &#2547; {serviceCharge} </h5>
+                                <h5 className="card-title" id="tax"> &#2547; {tax} </h5>
+                                <hr />
+                                <h5 className="card-title" id="tax">&#2547; {grandTotal} </h5>
                             </div>
-                           
+
                         </div>
-                        <br/>
-                        <Button>Confirm</Button>
+                        <br />
+                        <Button onClick={props.handleBooked} >Confirm</Button>
                     </div>
                 </div>
             </div>

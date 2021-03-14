@@ -5,14 +5,8 @@ import { useHistory } from 'react-router';
 const Ticket = (props) => {
     const data = props.data;
     console.log(data)
-    const { id, bus, sourceCity, destinationCity, isAc, totalSeats, departureTime } = data;
-    let condition = "";
-    if (isAc === true) {
-        condition = " [AC]"
-    }
-    else {
-        condition = "[Non-AC]"
-    }
+    const { id, bus, sourceCity, destinationCity, isAc, totalSeats, departureTime ,fare} = data;
+  
     const history = useHistory();
     const handleBook = (id) => {
         console.log("Clicked", id)
@@ -24,12 +18,13 @@ const Ticket = (props) => {
             {
                 data.map(d => <Card>
                     <Card.Body>
-                        <Card.Title>{d.bus} {d.condition}</Card.Title>
+                        <Card.Title>{d.bus}{d.isAc ? "[AC]" : "[Non-Ac]"}</Card.Title>
                         <Card.Text>
                             <p>Starting Point: {d.sourceCity}</p>
                             <p>End Point: {d.destinationCity}</p>
                             <p>Total Seats: {d.totalSeats} </p>
                             <p>DEPARTURE TIME: {d.departureTime} </p>
+                            <p>Fare:&#2547; {d.fare} </p>
                         </Card.Text>
                         <Button variant="info" onClick={() => handleBook(d.id)}>Book now</Button>
                     </Card.Body>
