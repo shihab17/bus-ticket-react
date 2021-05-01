@@ -4,9 +4,9 @@
 
 ### Features 
 
- - Bus searching by loaction  
- - User see bus by searching loaction
- - User can select his/her favourite saet if seat is avaliavle 
+ - Bus searching by location  
+ - User see bus by searching location
+ - User can select his/her favorite seat if seat is available 
  - User can see account summary 
  - User can buy ticket 
 
